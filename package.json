@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.50.1",
+    "cucumber-tsflow": "^4.4.4",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "playwright": "^1.50.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+  "test": "npx cucumber-js --format json:reports/cucumber_report.json",
+  "report": "node report-generator.js",
+  "test:report": "npm run test && npm run report"
+}
+
+}

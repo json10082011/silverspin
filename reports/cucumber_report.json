@@ -1,0 +1,252 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;user-logs-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 878223299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the SauceDemo login page",
+            "match": {
+              "location": "steps\\login.steps.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3149965000,
+              "error_message": "page.goto: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\exam\\steps\\login.steps.ts:14:16)\n    at C:\\exam\\steps\\login.steps.ts:8:71\n    at __awaiter (C:\\exam\\steps\\login.steps.ts:4:12)\n    at World.<anonymous> (C:\\exam\\steps\\login.steps.ts:24:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be redirected to the products page",
+            "match": {
+              "location": "steps\\login.steps.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 324405799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;user-logs-in-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User logs in with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 779820200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open the SauceDemo login page",
+            "match": {
+              "location": "steps\\login.steps.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3113524299,
+              "error_message": "page.goto: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\exam\\steps\\login.steps.ts:14:16)\n    at C:\\exam\\steps\\login.steps.ts:8:71\n    at __awaiter (C:\\exam\\steps\\login.steps.ts:4:12)\n    at World.<anonymous> (C:\\exam\\steps\\login.steps.ts:24:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter invalid credentials",
+            "match": {
+              "location": "steps\\login.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the login button",
+            "match": {
+              "location": "steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message",
+            "match": {
+              "location": "steps\\login.steps.ts:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 263979199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;user-logs-out-successfully",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "User logs out successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 771835399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am logged into SauceDemo",
+            "match": {
+              "location": "steps\\login.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1709875100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I open the side menu",
+            "match": {
+              "location": "steps\\login.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174754600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click the logout button",
+            "match": {
+              "location": "steps\\login.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2690549600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "steps\\login.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17228199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 312601500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
