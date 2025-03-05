@@ -5,7 +5,7 @@ let browser: Browser;
 let page: Page;
 
 Before(async function () {
-    browser = await chromium.launch({ headless: false, slowMo: 100 }); // Slow down interactions for stability
+    browser = await chromium.launch({ headless: true, slowMo: 100 }); // Slow down interactions for stability
     const context = await browser.newContext();
     page = await context.newPage();
 });
