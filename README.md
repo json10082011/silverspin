@@ -1,4 +1,4 @@
-Setting Up the Environment using powershell:
+Setting Up the Environment using powershell
 
 1. Sign the PowerShell Script, run the below command to allow the execution of the script within the current session:
 
