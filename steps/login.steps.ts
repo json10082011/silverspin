@@ -5,7 +5,7 @@ let browser: Browser;
 let page: Page;
 
 Before(async function () {
-    browser = await chromium.launch({ headless: true, slowMo: 100 }); // Slow down interactions for stability
+    browser = await chromium.launch({ headless: true, slowMo: 100 }); 
     const context = await browser.newContext();
     page = await context.newPage();
 });
@@ -27,7 +27,7 @@ When('I enter invalid credentials', async function () {
 
 When('I click the login button', async function () {
     await page.click('#login-button');
-    await page.waitForLoadState('networkidle', { timeout: 10000 }); // Ensure page loads fully
+    await page.waitForLoadState('networkidle', { timeout: 10000 }); 
 });
 
 Then('I should be redirected to the products page', async function () {
